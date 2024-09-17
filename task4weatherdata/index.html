@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="col-md-6">
+            <h1 class="text-center my-4">Weather App</h1>
+            <div id="weather-card" class="card shadow-lg position-relative">
+                <p id="current-time" class="position-absolute top-right"></p>
+                <p id="current-date" class="position-absolute top-right-date"></p>
+                <div class="card-body text-center">
+                    <h5 class="card-title" id="location-name">Enter a Location</h5>
+                    <div id="icon-container">
+                    </div>
+                    <p class="card-text" id="weather-description">Weather description will appear here</p>
+                    <div class="d-flex flex-column align-items-center mt-4">
+                        <p class="card-text" id="temperature"><i class="fas fa-thermometer-half"></i> --°C</p>
+                        <p class="card-text" id="humidity" class="mt-3"><i class="fas fa-tint"></i> --%</p>
+                        <p class="card-text" id="wind-speed" class="mt-3"><i class="fas fa-wind"></i> -- m/s</p>
+                    </div>
+                </div>
+            </div>
+            <form id="location-form" class="mt-4">
+                <div class="input-group">
+                    <input type="text" id="location-input" class="form-control" placeholder="Enter city name">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit">Get Weather</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
